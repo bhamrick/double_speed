@@ -7,9 +7,9 @@
 .endMe
 
 .romBankSize   $4000 ; generates $8000 byte ROM
-.romBanks      64
+.romBanks      2
 
-.cartridgeType $13 ; MBC1
+.cartridgeType $1 ; MBC1
 .computeChecksum
 .computeComplementCheck
 
@@ -43,9 +43,6 @@
                .byte $80
           .endif
      .endif
-
-.org $144
-    .byte $30,$31,$03,$13,$05,$03,$01,$33,$00
 
 .org $200
 
