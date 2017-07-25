@@ -10,7 +10,7 @@ double_speed_ly.o: double_speed_ly.s common/*
 	wla-gb -o double_speed_ly.o double_speed_ly.s
 
 double_speed_ly.gb: double_speed_ly.o linkfile
-	wlalink linkfile double_speed_ly.gb
+	wlalink linkfile_ly double_speed_ly.gb
 
 clean:
 	rm *.o *.gb
